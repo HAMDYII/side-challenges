@@ -1,0 +1,84 @@
+:root {
+  --main-color: #442b48;
+}
+* {
+  box-sizing: border-box;
+}
+*::selection {
+  background-color: aqua;
+}
+body {
+  font-family: Tahoma, Arial;
+  background-color: #0c0318;
+}
+.repos-container {
+  width: 800px;
+  background-color: #f0f0f0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.get-repos {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1%;
+}
+.repo-name {
+  width: 100%;
+  height: 35px;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.get-btn {
+  width: 15%;
+  background-color: var(--main-color);
+  padding: 8px;
+  color: white;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.show-repos {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 2px;
+}
+h3 {
+  color: var(--main-color);
+}
+.repos {
+  border-radius: 2px;
+}
+.repo {
+  margin-bottom: 10px;
+  padding: 10px;
+  background: white;
+  color: var(--main-color);
+  position: relative;
+}
+.stars {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 80px;
+}
+.visit-btn {
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--main-color);
+  padding: 6px 14px;
+  border-radius: 2px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}

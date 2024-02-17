@@ -1,0 +1,118 @@
+* {
+  font-family: "Poppins", sans-serif;
+  border-radius: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  background-image: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+}
+
+*::selection {
+  background-color: transparent;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  margin: 20px 80px 20px 0;
+}
+
+h2 img {
+  width: 30px;
+  margin-left: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  padding: 0 25px;
+  height: fit-content;
+  width: fit-content;
+}
+
+.task {
+  color: #4d4d4d;
+  background-image: url(/images/unchecked.png);
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+  position: relative;
+  margin: 10px;
+  padding: 5px;
+  width: 330px;
+  letter-spacing: 1px;
+  margin-top: 12px;
+  transition: 0.2s;
+}
+.task-remover {
+  color: rgb(201, 201, 201);
+  font-size: 22px;
+  margin-top: 4px;
+  position: absolute;
+  right: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+  margin-left: 15px;
+}
+.task:hover .task-remover {
+  color: rgb(255, 0, 0);
+}
+
+.checked {
+  text-decoration: line-through;
+  background-image: url(/images/checked.png);
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  background-size: 12px;
+}
+
+.task div {
+  max-width: 300px;
+  padding-left: 20px;
+  margin-left: -5px;
+}
+text {
+  margin-left: -4px;
+  overflow: hidden;
+  max-width: 290px;
+  padding-left: 20px;
+}
+
+.task text,
+.task .task-remover,
+.task img {
+  cursor: pointer;
+}
+
+.popUp {
+  background-color: white;
+  width: fit-content;
+  height: fit-content;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin: 20px;
+  margin-top: -130px;
+}
+.popUp span {
+  font-size: 35px;
+  font-weight: bold;
+}

@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 5000px;
+  background-color: #eee;
+  margin: 0;
+}
+
+.scroll-progress {
+  background-color: #670086;
+  height: 5px;
+  width: 0;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  position: fixed;
+}
